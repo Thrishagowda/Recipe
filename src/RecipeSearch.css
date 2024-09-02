@@ -1,0 +1,120 @@
+/* Container for the entire search page */
+.recipe-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items at the top */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); /* Gradient background */
+  font-family: 'Poppins', sans-serif; /* Elegant, modern font */
+  padding: 20px; /* Reduced padding to keep it near the top */
+  padding-top: 40px; /* Added top padding for space above content */
+}
+
+
+/* Title styling */
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1.5px;
+}
+
+/* Search form container */
+.search-form {
+  display: flex;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+  border-radius: 50px; /* Rounded, pill-shaped form */
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Search input styling */
+.search-input {
+  flex: 1;
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  color: #333;
+  border-radius: 50px 0 0 50px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+.search-input:focus {
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit button styling */
+.search-button {
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  background-color: #ff6f61; /* Vibrant, striking color */
+  color: white;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover and active effects */
+.search-button:hover {
+  background-color: #e65a50;
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.search-button:active {
+  transform: translateY(0); /* Return to normal on click */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+/* Recipe description styling */
+.recipe-description {
+  margin-top: 35px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 800px;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background with subtle color */
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Strong shadow for depth */
+  backdrop-filter: blur(10px); /* Blur effect for a glassy look */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Add fade-in effect for the recipe description */
+.recipe-description {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.recipe-description.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .search-form {
+    max-width: 100%;
+  }
+
+  .recipe-description {
+    font-size: 1.4rem;
+    padding: 15px 20px;
+  }
+}

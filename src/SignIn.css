@@ -1,0 +1,205 @@
+/* SignInPage.css */
+/*
+.sign-in-page {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}*/
+
+.sign-in-page {
+
+  background-color: #cce7ff;
+  padding: 60px 30px 80px 10px ;
+  border-radius: 12px;
+  box-shadow: 10px 6px 30px rgba(3, 5, 0, 0.1);
+  width: 100%;
+margin-left:550px;
+margin-top:100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.sign-in-page h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.sign-in-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-page label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+/*
+
+.sign-in-page input[type="email"],
+.sign-in-page input[type="password"] {
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sign-in-page input[type="email"]:focus,
+.sign-in-page input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.sign-in-page button[type="submit"] {
+  padding: 14px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sign-in-page button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.sign-in-page p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.sign-in-page p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.sign-in-page p a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+*/
+/* Responsive Styles *//*
+
+
+@media (max-width: 480px) {
+  .sign-in-page {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .sign-in-page h1 {
+    font-size: 24px;
+  }
+
+  .sign-in-page input[type="email"],
+  .sign-in-page input[type="password"] {
+    font-size: 14px;
+  }
+
+  .sign-in-page button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+*/
+
+
+.sign-in-page input[type="email"],
+.sign-in-page input[type="password"] {
+  padding: 12px 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.sign-in-page input[type="email"]:focus,
+.sign-in-page input[type="password"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.sign-in-page button[type="submit"] {
+  padding: 14px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Ensure button takes full width */
+}
+
+.sign-in-page button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.sign-in-page p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.sign-in-page p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.sign-in-page p a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .sign-in-page {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .sign-in-page h1 {
+    font-size: 24px;
+  }
+
+  .sign-in-page input[type="email"],
+  .sign-in-page input[type="password"] {
+    font-size: 14px;
+  }
+
+  .sign-in-page button[type="submit"] {
+    font-size: 14px;
+  }
+}
